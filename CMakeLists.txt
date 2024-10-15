@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(ZeroMQProject)
 
-#Установка libzmq
+# Установка libzmq
 execute_process(
     COMMAND sudo sh -c "echo 'deb http://download.opensuse.org/repositories/network:/messaging:/zeromq:/release-stable/xUbuntu_20.04/ /' > /etc/apt/sources.list.d/network:messaging:zeromq:release-stable.list"
     COMMAND curl -fsSL https://download.opensuse.org/repositories/network:messaging:zeromq:release-stable/xUbuntu_20.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/network_messaging_zeromq_release-stable.gpg > /dev/null
@@ -10,7 +10,7 @@ execute_process(
     WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
 )
 
-#Установка czmq
+# Установка czmq
 execute_process(
     COMMAND git clone https://github.com/zeromq/czmq.git
     WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
@@ -24,24 +24,29 @@ execute_process(
     WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/czmq
 )
 
-#Установка libtool
+# Установка libtool
 execute_process(
     COMMAND sudo apt install -y libtool
     WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
 )
 
+# Установка libcap
+execute_process(
+    COMMAND sudo apt install -y libpcap-dev
+    WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+)
 
 set(SOURCE_DIR ${CMAKE_SOURCE_DIR}/tests)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/src)
 
-#Компиляция server.c и client.c
+# Компиляция server.c и client.c
 add_executable(server ${SOURCE_DIR}/server.c)
-target_link_libraries(server zmq)
+target_link_libraries(server zmq pcap)  
 
 add_executable(client ${SOURCE_DIR}/client.c)
 target_link_libraries(client zmq)
 
-#Запуск server и client
+# Запуск server и client
 add_custom_target(run_server
     COMMAND ./server
     DEPENDS server
@@ -60,3 +65,4 @@ add_custom_target(run_all
     DEPENDS server client
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/src
 )
+
