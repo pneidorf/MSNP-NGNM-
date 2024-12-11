@@ -1,0 +1,3 @@
+/home/pneidorf/Desktop/MSNP-NGNM-/build/CMakeFiles/tcp_proxy.dir
+/home/pneidorf/Desktop/MSNP-NGNM-/build/CMakeFiles/edit_cache.dir
+/home/pneidorf/Desktop/MSNP-NGNM-/build/CMakeFiles/rebuild_cache.dir

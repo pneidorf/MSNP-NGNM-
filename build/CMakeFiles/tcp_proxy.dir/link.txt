@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.o -o tcp_proxy  -lzmq 

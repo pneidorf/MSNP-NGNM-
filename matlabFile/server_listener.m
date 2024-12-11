@@ -1,4 +1,3 @@
-
 clear java;
 javaaddpath('/home/pneidorf/Desktop/jeromq/jeromq-0.6.0/target/jeromq-0.6.0.jar')
 
