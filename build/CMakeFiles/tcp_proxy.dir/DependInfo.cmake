@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pneidorf/Desktop/MSNP-NGNM-/tcp_proxy.cpp" "CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.o" "gcc" "CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.o.d"
+  "/home/pneidorf/Desktop/MSNP-NGNM-/src/tcp_proxy.cpp" "CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.o" "gcc" "CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -129,29 +129,29 @@ tcp_proxy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_proxy.dir/build.make CMakeFiles/tcp_proxy.dir/build
 .PHONY : tcp_proxy/fast
 
-tcp_proxy.o: tcp_proxy.cpp.o
-.PHONY : tcp_proxy.o
+src/tcp_proxy.o: src/tcp_proxy.cpp.o
+.PHONY : src/tcp_proxy.o
 
 # target to build an object file
-tcp_proxy.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_proxy.dir/build.make CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.o
-.PHONY : tcp_proxy.cpp.o
+src/tcp_proxy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_proxy.dir/build.make CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.o
+.PHONY : src/tcp_proxy.cpp.o
 
-tcp_proxy.i: tcp_proxy.cpp.i
-.PHONY : tcp_proxy.i
+src/tcp_proxy.i: src/tcp_proxy.cpp.i
+.PHONY : src/tcp_proxy.i
 
 # target to preprocess a source file
-tcp_proxy.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_proxy.dir/build.make CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.i
-.PHONY : tcp_proxy.cpp.i
+src/tcp_proxy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_proxy.dir/build.make CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.i
+.PHONY : src/tcp_proxy.cpp.i
 
-tcp_proxy.s: tcp_proxy.cpp.s
-.PHONY : tcp_proxy.s
+src/tcp_proxy.s: src/tcp_proxy.cpp.s
+.PHONY : src/tcp_proxy.s
 
 # target to generate assembly for a file
-tcp_proxy.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_proxy.dir/build.make CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.s
-.PHONY : tcp_proxy.cpp.s
+src/tcp_proxy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_proxy.dir/build.make CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.s
+.PHONY : src/tcp_proxy.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tcp_proxy"
-	@echo "... tcp_proxy.o"
-	@echo "... tcp_proxy.i"
-	@echo "... tcp_proxy.s"
+	@echo "... src/tcp_proxy.o"
+	@echo "... src/tcp_proxy.i"
+	@echo "... src/tcp_proxy.s"
 .PHONY : help
 
 

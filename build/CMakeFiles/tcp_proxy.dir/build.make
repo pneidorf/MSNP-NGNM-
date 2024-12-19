@@ -69,28 +69,28 @@ include CMakeFiles/tcp_proxy.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tcp_proxy.dir/flags.make
 
-CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.o: CMakeFiles/tcp_proxy.dir/flags.make
-CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.o: ../tcp_proxy.cpp
-CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.o: CMakeFiles/tcp_proxy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pneidorf/Desktop/MSNP-NGNM-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.o -MF CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.o.d -o CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.o -c /home/pneidorf/Desktop/MSNP-NGNM-/tcp_proxy.cpp
+CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.o: CMakeFiles/tcp_proxy.dir/flags.make
+CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.o: ../src/tcp_proxy.cpp
+CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.o: CMakeFiles/tcp_proxy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pneidorf/Desktop/MSNP-NGNM-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.o -MF CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.o.d -o CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.o -c /home/pneidorf/Desktop/MSNP-NGNM-/src/tcp_proxy.cpp
 
-CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pneidorf/Desktop/MSNP-NGNM-/tcp_proxy.cpp > CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.i
+CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pneidorf/Desktop/MSNP-NGNM-/src/tcp_proxy.cpp > CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.i
 
-CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pneidorf/Desktop/MSNP-NGNM-/tcp_proxy.cpp -o CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.s
+CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pneidorf/Desktop/MSNP-NGNM-/src/tcp_proxy.cpp -o CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.s
 
 # Object files for target tcp_proxy
 tcp_proxy_OBJECTS = \
-"CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.o"
+"CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.o"
 
 # External object files for target tcp_proxy
 tcp_proxy_EXTERNAL_OBJECTS =
 
-tcp_proxy: CMakeFiles/tcp_proxy.dir/tcp_proxy.cpp.o
+tcp_proxy: CMakeFiles/tcp_proxy.dir/src/tcp_proxy.cpp.o
 tcp_proxy: CMakeFiles/tcp_proxy.dir/build.make
 tcp_proxy: CMakeFiles/tcp_proxy.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pneidorf/Desktop/MSNP-NGNM-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tcp_proxy"

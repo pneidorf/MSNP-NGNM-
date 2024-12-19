@@ -1,10 +1,11 @@
 mkdir -p build
 cd build
 cmake ..
+rm tcp_proxy
 make
 
 
-PATHSRS=/home/Desktop/srsRAN_4G/build
+PATHSRS=/home/pneidorf/Desktop/srsRAN_4G/build
 
 
 while getopts "eups" OPTION; do
